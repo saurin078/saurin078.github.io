@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saurin's Shelf</title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body class="document">
+    
+    <header>
+      <h1>Saurin's Shelf</h1>
+    </header>
+    
+    <main>
+      <section class="shelfs">
+        <!-- <section class="shelf">
+          <header>Books!</header>
+          <section class="figures">
+            <figure>
+              <img src="https://images-na.ssl-images-amazon.com/images/I/717KRq4xxxL.jpg" alt="When Breath Becomes Air by Paul Kalanithi">
+              <figcaption>When Breath Becomes Air</figcaption>
+            </figure>
+            <figure>
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71rtQvf5UVL.jpg" alt="Bad Blood by John Carreyrou">
+              <figcaption>Bad Blood</figcaption>
+            </figure>
+            <figure>
+              <img src="https://prodimage.images-bn.com/pimages/9780439358071_p0_v4_s1200x630.jpg" alt="Harry Potter and the Order of the Pheonix by JK Rowling">
+              <figcaption>Harry Potter and the Order of the Pheonix</figcaption>
+            </figure>
+          </section>
+        </section> -->
+      </section>
+
+      <div class="new-shelf">
+        <button id="new-shelf" class="new" type="button">Add New Shelf!</button>
+      </div>
+        
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add a New Shelf</h2>
+          <form id = "new-shelf-form" action="/action_page.php" target="_self" method="post">
+            <label for="shelf-name">Shelf Name:</label><br>
+            <input type="text" id="shelf-name" name="shelf-name"><br>
+            <section id = "items">
+              <div class="single-item" id="item-1">
+                <label for="item-1-title">Item 1:</label><br>
+                <input type="text" id="item-1-title" name="item-1-title"><br>
+                <label for="item-1-img">URL to Item 1 Image:</label><br>
+                <input type="text" id="item-1-img" name="item-1-img">
+              </div>
+              <!-- <div class="single-item" id="item-1">
+                <label for="item-1-title">Item 1:</label><br>
+                <input type="text" id="item-1-title" name="item-1-title" value="When Breath Becomes Air"><br>
+                <label for="item-1-img">URL to Item 1 Image:</label><br>
+                <input type="text" id="item-1-img" name="item-1-img" value="https://images-na.ssl-images-amazon.com/images/I/717KRq4xxxL.jpg">
+              </div>
+              <div class="single-item" id="item-2">
+                <label for="item-2-title">Item 2:</label><br>
+                <input type="text" id="item-2-title" name="item-2-title" value="When Breath Becomes Air"><br>
+                <label for="item-2-img">URL to Item 2 Image:</label><br>
+                <input type="text" id="item-2-img" name="item-2-img" value="https://images-na.ssl-images-amazon.com/images/I/71rtQvf5UVL.jpg">
+              </div>
+              <div class="single-item" id="item-3">
+                <label for="item-3-title">Item 3:</label><br>
+                <input type="text" id="item-3-title" name="item-3-title" value="When Breath Becomes Air"><br>
+                <label for="item-3-img">URL to Item 3 Image:</label><br>
+                <input type="text" id="item-3-img" name="item-3-img" value="https://prodimage.images-bn.com/pimages/9780439358071_p0_v4_s1200x630.jpg">
+              </div> -->
+            </section><br><br>
+
+            <section class=adjust-new-item-list>
+              <button id="new-item" class="new" type="button">Add Another Item</button><br>
+              <button id="delete-item" class="new" type="button">Delete Last Item</button><br>
+            </section>
+
+            <button id="submit-new-shelf-form" class="new" type="button">Submit!</button><br>
+
+            <!-- <input type="submit" value="Submit"> --> <!--use this once the server is set up-->
+          </form>
+        </div>
+      </div>
+    
+    </main>
+    
+
+
+
+
+
+
+    <footer>
+        <a class="create-new-profile" href=#>Make your own Shelf!</a>
+    </footer>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="./resources/js/index.js"></script>
+
+</body>
+</html>
